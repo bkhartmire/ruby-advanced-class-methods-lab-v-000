@@ -49,14 +49,14 @@ class Song
 
   def self.new_from_filename(filename)
     song = self.new
-    array = filename.split(" - ")
+    array = filename.split("-")
     array[0] = song.artist_name
     song.name = array[1].chomp(".mp3")
     song
   end
 
   def self.create_from_filename(filename)
-    @@all << self.new_from_filename(filname)
+    @@all << self.new_from_filename(filename)
   end
 
   def self.destroy_all
