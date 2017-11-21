@@ -53,7 +53,7 @@ class Song
     artist = array[0].strip
     song.artist_name = artist
     name = array[1].strip.chomp(".mp3")
-    name = song.name
+    song.name = name
     song
   end
 
